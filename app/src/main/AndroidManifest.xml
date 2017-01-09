@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="limeng.com.findyou">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19"
+        tools:ignore="OldTargetApi" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a10f738f015b3e6f045d59e90259f901" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".Index" />
+        <activity android:name=".view.Register_Activity" />
+        <activity android:name=".view.Myself_Activity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.Findpwd" />
+        <activity android:name=".view.ResetPwd" />
+        <activity android:name=".view.TestActivity" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".view.MyThemeActivity" />
+        <activity android:name=".view.Noviceguidance" />
+        <activity android:name=".MyTipsActivity" />
+        <activity android:name=".view.MyselfinformationActivity" />
+        <activity android:name=".view.FindActivity" />
+        <activity android:name=".view.EditActivity" />
+        <activity android:name=".view.UpdateActivity" />
+        <activity android:name=".view.OtherMainActivity" />
+        <activity android:name=".view.Lookupmessage" />
+        <activity android:name=".view.FindSameHobby" />
+        <activity android:name=".view.FindOldActivity" />
+        <activity
+            android:name=".view.SearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".view.Test2Activity" />
+        <activity android:name=".view.LeaveMsgActivity" />
+        <activity android:name=".view.Firstpage_Activity">
+
+        </activity>
+        <activity android:name=".view.TieziDetailActivity" />
+        <activity android:name=".view.UpdateHbyActivity"></activity>
+    </application>
+
+</manifest>
